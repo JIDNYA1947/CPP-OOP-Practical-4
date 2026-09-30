@@ -1,0 +1,26 @@
+PROGRAM 1: POINTER AND REFERENCE
+
+INPUT:
+Enter student marks: 65
+
+OUTPUT:
+Marks before using pointer and reference = 65
+Address of marks = 0x61ff08
+Address stored in pointer = 0x61ff08
+Marks after using pointer = 78
+Marks after using reference = 85
+
+
+PROGRAM 2: DYNAMIC MEMORY USING NEW AND DELETE[]
+
+INPUT:
+Enter number of students: 3
+Enter marks of 3 students:
+Student 1: 75
+Student 2: 80
+Student 3: 85
+
+OUTPUT:
+Total Marks: 240
+Average Marks: 80
+Dynamic memory released successfully.

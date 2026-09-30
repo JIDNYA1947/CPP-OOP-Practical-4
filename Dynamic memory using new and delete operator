@@ -1,4 +1,5 @@
-//Program on new and delete operators in C++ for dynamic memeory
+// Program: Dynamic Memory using new and delete[] – Student Marks
+
 #include <iostream>
 using namespace std;
 
@@ -15,18 +16,20 @@ int main() {
 
     int *marks = new int[n];
 
-    cout << "Enter marks of " << n << " students:" << endl;
+    int total = 0;
+
+    cout << "Enter marks of " << n << " students:\n";
 
     for (int i = 0; i < n; i++) {
         cout << "Student " << i + 1 << ": ";
         cin >> marks[i];
+        total += marks[i];
     }
 
-    cout << "\nStudent Marks:" << endl;
+    double average = (double)total / n;
 
-    for (int i = 0; i < n; i++) {
-        cout << "Student " << i + 1 << ": " << marks[i] << endl;
-    }
+    cout << "\nTotal Marks: " << total << endl;
+    cout << "Average Marks: " << average << endl;
 
     delete[] marks;
     marks = nullptr;
